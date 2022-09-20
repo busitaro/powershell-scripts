@@ -1,5 +1,7 @@
-$storeFile = '.\store\pointer'
-$sameCountFile = '.\store\same'
+$storeFile = "${PSScriptRoot}\store\pointer"
+$sameCountFile = "${PSScriptRoot}\store\same"
+
+
 # 指定回数までポインタが移動しないことを許容
 $maxSameCount = 3
 
