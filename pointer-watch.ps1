@@ -5,9 +5,11 @@ $sameCountFile = "${PSScriptRoot}\store\same"
 # 指定回数までポインタが移動しないことを許容
 $maxSameCount = 3
 
-function isSame($positions) {
-    $position1 = $positions[0]
-    $position2 = $positions[1]
+function isSame() {
+    param(
+        $position1,
+        $position2
+    )
 
     if ($position1.x -eq $position2.x -and $position1.y -eq $position2.y) {
         return $true
@@ -16,11 +18,13 @@ function isSame($positions) {
     }
 }
 
-function isMaxSameCountOvered($positions) {
-    $prevPosition = $positions[0]
-    $nowPosition = $positions[1]
+function isMaxSameCountOvered() {
+    param(
+        $prevPosition,
+        $nowPosition
+    )
 
-    if (isSame($prevPosition, $nowPosition)) {
+    if (isSame $prevPosition $nowPosition) {
         $count = readSameCount
         $count++
         if ($count -gt $maxSameCount) {

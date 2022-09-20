@@ -3,9 +3,9 @@
 
 $prevPosition = readStorePosition
 $nowPosition = getPointerPosition
-storePosition($nowPosition)
+storePosition $nowPosition
 
-$sameCountOver = isMaxSameCountOvered($prevPosition, $nowPosition)
+$sameCountOver = isMaxSameCountOvered $prevPosition $nowPosition
 
 if ($sameCountOver) {
     lock
