@@ -18,9 +18,9 @@
 
 $prevPosition = readStorePosition
 $nowPosition = getPointerPosition
-storePosition($nowPosition)
+storePosition $nowPosition
 
-$same = isMaxSameCountOvered($prevPosition, $nowPosition)
+$same = isMaxSameCountOvered $prevPosition $nowPosition
 if ($same) {
     return $true
 } else {
