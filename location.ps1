@@ -17,21 +17,3 @@ function getLocation() {
     # 位置情報を取得できていない場合、IsUnknownプロパティにTrueが設定
     return $GeoWatcher.Position.Location
 }
-
-function callApi($latitude, $longitude) {
-    echo $latitude
-    echo $longitude
-}
-
-function errorLog() {
-    $logFile
-}
-
-$location = getLocation
-if ($location.isUnknown) {
-    errorLog
-} else {
-    $latitude = $location.Latitude
-    $longitude = $location.Longitude
-    callApi $latitude $longitude
-}
