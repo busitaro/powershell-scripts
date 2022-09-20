@@ -7,6 +7,7 @@
 | [poiner-watch.ps1](./pointer-watch.ps1)      | ポインタの位置監視               |
 | [lock.ps1](./lock.ps1)                       | windows のアカウントロック       |
 | [lock-by-pointer.ps1](./lock-by-pointer.ps1) | ポインタ位置監視結果によりロック |
+| [logging.ps1](./logging.ps1)                 | ログ出力                         |
 
 ## 使い方
 
@@ -33,4 +34,11 @@ if ($same) {
 . .\lock.ps1
 
 lock
+```
+
+### logging.ps1
+
+```
+. .\logging.ps1
+outputLog "/path/to/logfile" "message"
 ```
