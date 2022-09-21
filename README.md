@@ -4,7 +4,7 @@
 
 | スクリプト名                                 | 概要                             |
 | -------------------------------------------- | -------------------------------- |
-| [emtpy.ps1](./emtpy.ps1)                     | フォルダを空にする               |
+| [empty.ps1](./emtpy.ps1)                     | フォルダを空にする               |
 | [location.ps1](./location.ps1)               | 位置情報取得                     |
 | [lock.ps1](./lock.ps1)                       | windows のアカウントロック       |
 | [lock-by-pointer.ps1](./lock-by-pointer.ps1) | ポインタ位置監視結果によりロック |
